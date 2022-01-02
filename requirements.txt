@@ -1,0 +1,4 @@
+termux
+wget
+geopy
+apscheduler
