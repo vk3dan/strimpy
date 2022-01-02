@@ -20,7 +20,7 @@ outputdir='./output/'
 telemetryfile = f'{outputdir}telemetry.txt'
 wxfile = f'{outputdir}weather.txt'
 iconfile = f'{outputdir}wxicon.png'
-useragent = "agent"
+useragent = "strimpy"
 #uncomment correct home directory type for streaming computer
 homename = "Users"  # MacOS
 # homename = "home"   # Linux
