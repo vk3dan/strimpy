@@ -111,7 +111,7 @@ def justtelemetry():
     locationtuple = termux.API.location()
     locationjson = dict(locationtuple[1])
     speedkmh = round(float(locationjson['speed']) * 3.6,1)
-    speedmph = round(speedkmh * 2.236936,1)
+    speedmph = round(float(locationjson['speed']) * 2.236936,1)
     direction = direction_from_degrees(locationjson['bearing'])
     altitude = round(float(locationjson['altitude']))
     telemetry = f"Speed: {speedkmh} km/h ({speedmph} mph) | {direction} | Altitude: {altitude} m"
